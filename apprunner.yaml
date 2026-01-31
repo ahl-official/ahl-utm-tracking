@@ -1,0 +1,23 @@
+version: 1.0
+runtime: nodejs18
+
+build:
+  commands:
+    build:
+      - npm install --only=production
+
+run:
+  runtime-version: 18
+  command: node server.js
+  network:
+    port: 8080
+    env: PORT
+  env:
+    - name: NODE_ENV
+      value: "production"
+    - name: AWS_REGION
+      value: "ap-south-1"
+    - name: SHEETS_SPREADSHEET_ID
+      value: "1TCoSBJdG3guTxw68LSvAiONxmeP_SFjQb4BfdSmpIXE"
+    - name: WHATSAPP_NUMBER
+      value: "919137279145"
