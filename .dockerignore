@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+.git
+.gitignore
+README.md
+AWS_MIGRATION_GUIDE.md
+FILE_COMPARISON.md
+QUICK_START.md
+GOOGLE_SETUP.md
+Sample Code and Creds
+*.md
+.env*
+*.json
